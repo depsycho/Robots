@@ -4,12 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewAnimator;
 
+import static lt.vtvpmc.ems.layoutelements.R.drawable.red;
+
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textViewTwo;
+    private ImageView imageViewOne;
     private Button buttonOne;
     private Button buttonTwo;
     private Button buttonThree;
@@ -19,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewTwo = (TextView) findViewById(R.id.textViewTwo);
+        imageViewOne = (ImageView) findViewById(R.id.imageViewOne);
         buttonOne = (Button) findViewById(R.id.buttonOne);
         buttonTwo = (Button) findViewById(R.id.buttonTwo);
         buttonThree = (Button) findViewById(R.id.buttonThree);
@@ -28,13 +31,14 @@ public class MainActivity extends AppCompatActivity {
     public void clickButton(View view) {
         switch (view.getId()) {
             case R.id.buttonOne:
-                textViewTwo.setBackgroundColor(getResources().getColor(R.color.redColor);
-
+                imageViewOne.setImageResource(R.drawable.red);
+                break;
             case R.id.buttonTwo:
-                textViewTwo.setBackgroundColor(getResources().getColor(R.color.greenColor);
-
+                imageViewOne.setImageResource(R.drawable.green);
+                break;
              case R.id.buttonThree:
-                textViewTwo.setBackgroundColor(getResources().getColor(R.color.blueColor);
+                 imageViewOne.setImageResource(R.drawable.blue);
+                 break;
 }
     }
 }
