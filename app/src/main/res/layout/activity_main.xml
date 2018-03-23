@@ -17,28 +17,22 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="1dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:gravity="center"
         android:textSize="40sp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         />
 
-    <TextView
-        android:id="@+id/textViewTwo"
+    <ImageView
+        android:id="@+id/imageViewOne"
         android:layout_width="match_parent"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="1dp"
-        android:layout_weight="3"
         android:layout_height="wrap_content"
-        android:background="@color/defaultTextBackgroundColor"
-
+        android:layout_weight="1"
+        android:src="@drawable/black"
         />
 
-
-<LinearLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
